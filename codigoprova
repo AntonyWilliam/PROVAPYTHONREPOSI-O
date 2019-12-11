@@ -1,0 +1,31 @@
+                                                REPOSIÇÃO PYTHON PROVA 1 QUESTÃO 1
+                                                
+def main():
+    t = int(input("Quantos jogos deseja fazer ?"))
+    pedra = str("pedra")
+    papel = str("papel")
+    tesoura = str("tesoura")
+    lagarto = str("lagarto")
+    spock = str("spock")
+    while t<=0 or t>100:
+        t = int(input("Quantos jogos deseja fazer ? APENAS NUMEROS ENTRE 1 E 100"))
+
+    for i in range(t):
+     sheldon = str(input("pedra, papel, tesoura, lagarto, spock:"))
+     while sheldon != pedra and sheldon != papel and sheldon != tesoura and sheldon != lagarto and sheldon != spock:
+        sheldon = str(input("INVALIDO !! pedra, papel, tesoura, lagarto, spock:"))
+
+     raj = str(input("pedra, papel, tesoura, lagarto, spock:"))
+     while raj != pedra and raj!= papel and raj != tesoura and raj != lagarto and raj != spock:
+        raj = str(input("INVALIDO !! pedra, papel, tesoura, lagarto, spock:"))
+
+     print(sheldon,raj)
+     if sheldon == tesoura and raj == papel or sheldon == papel and raj == pedra or sheldon == pedra and raj == lagarto or sheldon == lagarto and raj == spock or sheldon== spock and raj == tesoura or sheldon == tesoura and raj == lagarto or sheldon == lagarto and raj == papel or sheldon == papel and raj == spock or sheldon == spock and raj == pedra or sheldon == pedra and raj == tesoura:
+        print("Bazinga!!")
+     elif sheldon == raj:
+        print("De novo!!")
+
+     elif raj == tesoura and sheldon == papel or raj == papel and sheldon == pedra or raj == pedra and sheldon == lagarto or raj == lagarto and sheldon == spock or raj== spock and sheldon == tesoura or raj == tesoura and sheldon == lagarto or raj ==lagarto and sheldon == papel or raj == papel and sheldon == spock or raj == spock and sheldon == pedra or raj == pedra and sheldon == tesoura:
+        print("Raj trapaceou!!")
+
+main()
